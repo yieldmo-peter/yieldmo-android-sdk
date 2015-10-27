@@ -1,6 +1,6 @@
 # Yieldmo Android SDK
 
-Thanks for taking a look at Yieldmo! We take pride in having an easy-to-use, unobtrusive ad formats for mobile web and apps.
+Thanks for taking a look at Yieldmo! We take pride in having easy-to-use, unobtrusive ad formats for mobile web and apps.
 
 ## Download
 
