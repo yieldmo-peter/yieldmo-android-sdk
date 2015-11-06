@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.yieldmo.yieldmodemo"
-    android:versionCode="1"
+    package="com.yieldmo.adt.yieldmodemo"
+    android:versionCode="2"
     android:versionName="1.0" >
 
     <uses-sdk
@@ -31,16 +31,11 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <service android:name="com.yieldmo.sdk.GetConfigurationService" >
-        </service>
-        <service android:name="com.yieldmo.sdk.PlacementDataService" >
-        </service>
-        <service android:name="com.yieldmo.sdk.TemplateDataService" >
-        </service>
-        <service android:name="com.yieldmo.sdk.InitializationService" >
-        </service>
-        <service android:name="com.yieldmo.sdk.AssetDownloadService" >
-        </service>
+        <service android:name="com.yieldmo.sdk.GetConfigurationService" />
+        <service android:name="com.yieldmo.sdk.PlacementDataService" />
+        <service android:name="com.yieldmo.sdk.TemplateDataService" />
+        <service android:name="com.yieldmo.sdk.InitializationService" />
+        <service android:name="com.yieldmo.sdk.AssetDownloadService" />
     </application>
 
 </manifest>

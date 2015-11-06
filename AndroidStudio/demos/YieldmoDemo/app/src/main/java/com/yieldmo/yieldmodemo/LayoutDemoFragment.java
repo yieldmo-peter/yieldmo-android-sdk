@@ -16,7 +16,7 @@ import com.yieldmo.yieldmodemo.adapter.LayoutDemoAdapter;
 public class LayoutDemoFragment extends Fragment {
 
     private String TAG = "Layout Fragment";
-    private ListView listView ;
+    private ListView listView;
     private View myFragmentView;
 
     @Override
@@ -24,17 +24,19 @@ public class LayoutDemoFragment extends Fragment {
         myFragmentView = inflater.inflate(R.layout.fragment_layout, container, false);
 
         // Insert ad in 5th row
-        YMPlacementView adView = new YMPlacementView(getActivity(), "1017319088019847539", new YMViewDelegate() {
-            @Override
-            public void adDisplayFailed(YMPlacementView ymView, YMException e) {
-                Log.e(TAG, "Yieldmo Ad Failed");
-            }
+        YMPlacementView adView = new YMPlacementView.Builder(getActivity())
+                .placementId("1017319088019847539")
+                .delegate(new YMViewDelegate() {
+                    @Override
+                    public void adDisplayFailed(YMPlacementView ymView, YMException e) {
+                        Log.e(TAG, "Yieldmo Ad Failed");
+                    }
 
-            @Override
-            public void adDisplayed(YMPlacementView ymView) {
-                Log.v(TAG, "Yieldmo Ad Displayed");
-            }
-        });
+                    @Override
+                    public void adDisplayed(YMPlacementView ymView) {
+                        Log.v(TAG, "Yieldmo Ad Displayed");
+                    }
+                }).build();
 
         // Setup List
         listView = (ListView) myFragmentView.findViewById(R.id.list);

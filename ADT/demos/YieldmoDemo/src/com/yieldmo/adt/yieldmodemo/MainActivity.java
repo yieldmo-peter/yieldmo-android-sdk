@@ -1,7 +1,8 @@
-package com.yieldmo.yieldmodemo;
+package com.yieldmo.adt.yieldmodemo;
 
 import com.yieldmo.sdk.YMSdk;
 import com.yieldmo.sdk.util.YMLogger;
+import com.yieldmo.adt.yieldmodemo.R;
 
 import android.app.ActionBar;
 import android.app.Activity;

@@ -1,4 +1,4 @@
-package com.yieldmo.yieldmodemo.adapter;
+package com.yieldmo.adt.yieldmodemo.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.yieldmo.yieldmodemo.R;
+import com.yieldmo.adt.yieldmodemo.R;
 
 public class LayoutDemoAdapter extends BaseAdapter {
 

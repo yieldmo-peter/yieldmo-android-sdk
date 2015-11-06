@@ -1,13 +1,14 @@
-package com.yieldmo.yieldmodemo;
+package com.yieldmo.adt.yieldmodemo;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import com.yieldmo.adt.yieldmodemo.adapter.CodeDemoAdapter;
 import com.yieldmo.sdk.YMException;
 import com.yieldmo.sdk.YMPlacementView;
 import com.yieldmo.sdk.YMViewDelegate;
 import com.yieldmo.sdk.view.YMConfigurationView;
-import com.yieldmo.yieldmodemo.adapter.CodeDemoAdapter;
+import com.yieldmo.adt.yieldmodemo.R;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -34,17 +35,18 @@ public class CodeDemoFragment extends Fragment {
         rootView.addView(infoView);
 
         // Insert ad in 5th row
-        YMPlacementView adView = new YMPlacementView(getActivity(), "1017404126652644124", new YMViewDelegate() {
-            @Override
-            public void adDisplayFailed(YMPlacementView ymView, YMException e) {
-                Log.e(TAG, "Yieldmo Ad Failed");
-            }
+		YMPlacementView adView = new YMPlacementView.Builder(getActivity()).placementId("1017404126652644124")
+				.delegate(new YMViewDelegate() {
+					@Override
+					public void adDisplayFailed(YMPlacementView ymView, YMException e) {
+						Log.e(TAG, "Yieldmo Ad Failed");
+					}
 
-            @Override
-            public void adDisplayed(YMPlacementView ymView) {
-                Log.v(TAG, "Yieldmo Ad Displayed");
-            }
-        });
+					@Override
+					public void adDisplayed(YMPlacementView ymView) {
+						Log.v(TAG, "Yieldmo Ad Displayed");
+					}
+				}).build();
 
         // Setup List
         listView = (ListView) myFragmentView.findViewById(R.id.list);

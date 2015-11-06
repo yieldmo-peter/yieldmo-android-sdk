@@ -1,7 +1,8 @@
-package com.yieldmo.yieldmodemo;
+package com.yieldmo.adt.yieldmodemo;
 
 
 import com.yieldmo.sdk.YMSdk;
+import com.yieldmo.adt.yieldmodemo.R;
 
 import android.app.Fragment;
 import android.os.Bundle;

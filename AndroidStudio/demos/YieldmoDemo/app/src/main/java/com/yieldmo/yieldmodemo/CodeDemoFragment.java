@@ -20,7 +20,7 @@ import java.util.List;
 public class CodeDemoFragment extends Fragment {
 
     private String TAG = "Code Fragment";
-    private ListView listView ;
+    private ListView listView;
     private View myFragmentView;
 
     @Override
@@ -35,17 +35,19 @@ public class CodeDemoFragment extends Fragment {
         rootView.addView(infoView);
 
         // Insert YM ad in 5th row
-        YMPlacementView adView = new YMPlacementView(getActivity(), "1017404126652644124", new YMViewDelegate() {
-            @Override
-            public void adDisplayFailed(YMPlacementView ymView, YMException e) {
-                Log.e(TAG, "Yieldmo Ad Failed");
-            }
+        YMPlacementView adView = new YMPlacementView.Builder(getActivity())
+                .placementId("1017404126652644124")
+                .delegate(new YMViewDelegate() {
+                    @Override
+                    public void adDisplayFailed(YMPlacementView ymView, YMException e) {
+                        Log.e(TAG, "Yieldmo Ad Failed");
+                    }
 
-            @Override
-            public void adDisplayed(YMPlacementView ymView) {
-                Log.v(TAG, "Yieldmo Ad Displayed");
-            }
-        });
+                    @Override
+                    public void adDisplayed(YMPlacementView ymView) {
+                        Log.v(TAG, "Yieldmo Ad Displayed");
+                    }
+                }).build();
 
         // Setup List
         listView = (ListView) myFragmentView.findViewById(R.id.list);
