@@ -1,3 +1,7 @@
+## Version 2.3.3 (Nov 9, 2015)
+
+- Fixed threading issue
+
 ## Version 2.3.2 (Nov 6, 2015)
 
 - Removed 3rd party library dependecies
