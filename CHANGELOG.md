@@ -1,3 +1,8 @@
+## Version 2.3.4 (Dec 2, 2015)
+
+- Fixed issues with calculating width for few devices
+- Minor bug fixes
+
 ## Version 2.3.3 (Nov 9, 2015)
 
 - Fixed threading issue
