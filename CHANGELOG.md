@@ -1,3 +1,7 @@
+## Version 2.3.5 (Jan 27, 2016)
+
+- Several bug fixes
+
 ## Version 2.3.4 (Dec 2, 2015)
 
 - Fixed issues with calculating width for few devices
