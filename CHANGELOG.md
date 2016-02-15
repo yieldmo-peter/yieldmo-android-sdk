@@ -1,3 +1,13 @@
+## Version 3.0.0 (Feb 15, 2016)
+- Completely rewritten SDK
+- Brand new formats (Feature, Wrapper, etc.)
+- Style customization
+- Updated interface
+- AdChoices support
+- Hosted under Maven Repo
+- New features to test formats in-app
+- Several bug fixes and improvements
+
 ## Version 2.3.5 (Jan 27, 2016)
 
 - Several bug fixes

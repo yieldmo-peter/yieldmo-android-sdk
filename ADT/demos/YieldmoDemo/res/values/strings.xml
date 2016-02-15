@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <string name="app_name">Yieldmo Demo</string>
-    <string name="action_code">Code Demo</string>
-    <string name="action_layout">Layout Demo</string>
-    <string name="action_about">About</string>
-
-</resources>
