@@ -1,3 +1,6 @@
+## Version 3.0.2 (Mar 14, 2016)
+- Wrapper fixes
+
 ## Version 3.0.1 (Mar 1, 2016)
 - Stability fixes
 
