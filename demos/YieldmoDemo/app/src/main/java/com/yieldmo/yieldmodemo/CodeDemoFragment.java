@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
+import com.yieldmo.sdk.YMConstants;
 import com.yieldmo.sdk.YMException;
 import com.yieldmo.sdk.YMPlacementView;
 import com.yieldmo.sdk.YMPlacementListener;
@@ -30,13 +31,13 @@ public class CodeDemoFragment extends Fragment {
         // YMInfoView initialization
         ViewGroup rootView = (ViewGroup) myFragmentView.findViewById(R.id.rootView);
         List<String> placementIds = new ArrayList<>();
-        placementIds.add("1017404126652644124");
+        placementIds.add(YMConstants.carouselPlacementId);
         YMConfigurationView infoView = new YMConfigurationView(getActivity(), placementIds);
         rootView.addView(infoView);
 
         // Insert YM ad in 5th row
         YMPlacementView adView = new YMPlacementView.Builder(getActivity())
-                .placementId("1017404126652644124")
+                .placementId(YMConstants.carouselPlacementId)
                 .listener(new YMPlacementListener() {
                     @Override
                     public void adDisplayFailed(YMException e) {

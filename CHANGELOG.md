@@ -1,10 +1,16 @@
+## Version 3.1 (Mar 25, 2016)
+- New formats: Video & Carousel
+- Fixed performance and stability issues
+- Wrapper fixes
+- Several bug fixes
+
 ## Version 3.0.2 (Mar 14, 2016)
 - Wrapper fixes
 
 ## Version 3.0.1 (Mar 1, 2016)
 - Stability fixes
 
-## Version 3.0.0 (Feb 15, 2016)
+## Version 3.0 (Feb 15, 2016)
 - Completely rewritten SDK
 - Brand new formats (Feature, Wrapper, etc.)
 - Style customization

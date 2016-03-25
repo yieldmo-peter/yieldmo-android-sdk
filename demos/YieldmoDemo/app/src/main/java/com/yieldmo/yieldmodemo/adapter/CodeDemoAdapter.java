@@ -20,7 +20,7 @@ public class CodeDemoAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return 20;
+        return 40;
     }
 
     @Override
@@ -35,7 +35,7 @@ public class CodeDemoAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        if (position == 5) {
+        if (position == 12) {
             convertView = adViewToShow;
         } else {
             convertView = LayoutInflater.from(context).inflate(R.layout.row, parent, false);
