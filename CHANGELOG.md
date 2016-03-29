@@ -1,3 +1,6 @@
+## Version 3.1.1 (Mar 29, 2016)
+- Stability fixes
+
 ## Version 3.1 (Mar 25, 2016)
 - New formats: Video & Carousel
 - Fixed performance and stability issues
