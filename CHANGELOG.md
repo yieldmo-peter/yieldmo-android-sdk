@@ -1,3 +1,8 @@
+## Version 3.2.1 (May 19, 2016)
+- New formats: Mainstage
+- Fixed performance and stability issues
+- Several bug fixes
+
 ## Version 3.1.1 (Mar 29, 2016)
 - Stability fixes
 
