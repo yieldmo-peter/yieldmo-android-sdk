@@ -1,3 +1,8 @@
+## Version 3.2.2 (Jun 9, 2016)
+- Performance improvements
+- Bug fixes
+- We’re closer to having the SDK make coffee for you!
+
 ## Version 3.2.1 (May 19, 2016)
 - New formats: Mainstage
 - Fixed performance and stability issues
