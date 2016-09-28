@@ -10,8 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import com.yieldmo.sdk.YMConstants;
-import com.yieldmo.sdk.YMSdk;
-import com.yieldmo.sdk.util.YMLogger;
+import com.yieldmo.sdk.YMLogger;
+import com.yieldmo.sdk.Yieldmo;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Initialize YM SDK
         YMLogger.setLogLevel(YMLogger.LogLevel.Verbose); // Optional
-        YMSdk.initialize(getApplicationContext(), YMConstants.testAppId);
+        Yieldmo.initialize(YMConstants.testAppId, getApplicationContext());
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

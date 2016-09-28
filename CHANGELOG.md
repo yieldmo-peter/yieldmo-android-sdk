@@ -1,3 +1,9 @@
+## Version 4.0.0 (Sept 26, 2016)
+- Yieldmo SDK with MRAID 2.0 support
+- Support for additional, interactive Yieldmo formats
+- Revamped API for easier integration
+- DFP Adapter support for serving through DFP
+
 ## Version 3.2.2 (Jun 9, 2016)
 - Performance improvements
 - Bug fixes
@@ -48,7 +54,7 @@
 
 ## Version 2.3.2 (Nov 6, 2015)
 
-- Removed 3rd party library dependecies
+- Removed 3rd party library dependencies
 - Several bug fixes
 
 ## Version 2.3.1 (Oct 20, 2015)

@@ -10,13 +10,9 @@ import android.widget.ListView;
 
 import com.yieldmo.sdk.YMConstants;
 import com.yieldmo.sdk.YMException;
-import com.yieldmo.sdk.YMPlacementView;
 import com.yieldmo.sdk.YMPlacementListener;
-import com.yieldmo.sdk.view.YMConfigurationView;
+import com.yieldmo.sdk.YMPlacementView;
 import com.yieldmo.yieldmodemo.adapter.CodeDemoAdapter;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class CodeDemoFragment extends Fragment {
 
@@ -28,32 +24,30 @@ public class CodeDemoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         myFragmentView = inflater.inflate(R.layout.fragment_code, container, false);
 
-        // YMInfoView initialization
-        ViewGroup rootView = (ViewGroup) myFragmentView.findViewById(R.id.rootView);
-        List<String> placementIds = new ArrayList<>();
-        placementIds.add(YMConstants.carouselPlacementId);
-        YMConfigurationView infoView = new YMConfigurationView(getActivity(), placementIds);
-        rootView.addView(infoView);
-
         // Insert YM ad in 5th row
         YMPlacementView adView = new YMPlacementView.Builder(getActivity())
-                .placementId(YMConstants.carouselPlacementId)
-                .listener(new YMPlacementListener() {
-                    @Override
-                    public void adDisplayFailed(YMException e) {
-                        Log.e(TAG, "Yieldmo Ad Failed");
-                    }
+            .placementId(YMConstants.carouselPlacementId)
+            .listener(new YMPlacementListener() {
+                  @Override
+                  public void adDisplayFailed(YMException e) {
+                      Log.e(TAG, "Yieldmo Ad Failed");
+                  }
 
-                    @Override
-                    public void adDisplayed() {
-                        Log.v(TAG, "Yieldmo Ad Displayed");
-                    }
+                  @Override
+                  public void adDisplayed() {
+                      Log.v(TAG, "Yieldmo Ad Displayed");
+                  }
 
-                    @Override
-                    public void adLeavesApp() {
+                  @Override
+                  public void adLeavesApplication() {
+                    Log.v(TAG, "Yieldmo Ad Leaves Application");
+                  }
 
-                    }
-                }).build();
+                  @Override
+                  public void adClicked() {
+                    Log.v(TAG, "Yieldmo Ad Clicked");
+                  }
+            }).build();
 
         // Setup List
         listView = (ListView) myFragmentView.findViewById(R.id.list);
