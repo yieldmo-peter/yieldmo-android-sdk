@@ -38,8 +38,13 @@ public class LayoutDemoFragment extends Fragment {
                     }
 
                     @Override
-                    public void adLeavesApp() {
+                    public void adLeavesApplication() {
+                      Log.v(TAG, "Yieldmo Ad Leaves Application");
+                    }
 
+                    @Override
+                    public void adClicked() {
+                      Log.v(TAG, "Yieldmo Ad Clicked");
                     }
                 }).build();
 

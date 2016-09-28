@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.yieldmo.sdk.YMSdk;
+import com.yieldmo.sdk.Yieldmo;
 
 public class AboutFragment extends Fragment {
 
@@ -21,7 +21,7 @@ public class AboutFragment extends Fragment {
         // Get Version Label
         myFragmentView = inflater.inflate(R.layout.fragment_about, container, false);
         TextView lbl = (TextView) myFragmentView.findViewById(R.id.versionLabel);
-        lbl.setText("Yieldmo SDK v" + YMSdk.getVersion());
+        lbl.setText("Yieldmo SDK v" + Yieldmo.getVersion());
 
         TextView appVersionText = (TextView) myFragmentView.findViewById(R.id.appversionLabel);
         try {
